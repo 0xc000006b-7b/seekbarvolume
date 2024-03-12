@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, REBOOT_PERMISSION_CODE);
     }*/
 
+    //yadayada
+
     private void initializeView() {
         startService(new Intent(MainActivity.this, WidgetService.class));
         finish();
