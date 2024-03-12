@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Seekbar Volume</string>
+    <string name="title_device_admin" />
+    <string name="txt_device_admin_description" />
+</resources>

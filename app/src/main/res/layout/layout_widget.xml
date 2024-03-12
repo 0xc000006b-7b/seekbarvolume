@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/collapse_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/expand_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_volume_foreground">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/widget_exit_foreground">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/expanded_container"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_style"
+            android:backgroundTint="#6BFF5722"
+            android:visibility="gone">
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="259dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:thumbTint="#FFB600"/>
+
+            <Button
+                android:id="@+id/exitWidget"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="1dp"
+                android:background="@drawable/widget_exit_foreground" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
